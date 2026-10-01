@@ -103,6 +103,14 @@ cal
 ```shell
 date
 ```
+Получить таблицу ASCII
+```shell
+ascii -d
+```
+Получить таблицу ASCII с бинарными кодами
+```shell
+ascii -b
+```
  
 ### Сеть
  
@@ -259,6 +267,86 @@ cd -
 Удалить указанную папку
 ```shell
 rm -rf newDir
+```
+ 
+### Работа с разными языками программирования (выполнять в Ubuntu WSL)
+ 
+Создать файл скрипта
+```shell
+nano main.py
+```
+Текст скрипта
+```python
+print('Hello!')
+```
+Запустить программу
+```shell
+python3 main.py
+```
+Создать файл программы на C++
+```shell
+nano main.cpp
+```
+Текст программы
+```shell
+#include <iostream>
+int main() {
+    std::cout << "Hello!" << std::endl;
+    return 0;
+}
+```
+Скомпилировать программу
+```shell
+g++ main.cpp -o main.bin
+```
+или
+```shell
+clang++ main.cpp -o main.bin
+```
+Запустить программу
+```shell
+./main.bin
+```
+Получить зависимости от библиотек указанной программы
+```shell
+ldd main.bin
+```
+Получить время выполения скрипта или программы
+```shell
+time python3 main.py
+```
+ 
+### Конвейерная обработка файлов и каталогов
+ 
+Создать сразу несколько пустых файлов
+```shell
+touch {1..3}.txt
+```
+Создать сразу несколько пустых папкок
+```shell
+mkdir folder{1..3}
+```
+Удалить сразу несколько файлов
+```shell
+rm {1..3}.txt
+```
+Удалить сразу несколько папок
+```shell
+rm -rf folder{1..3}
+```
+Создать сложную структуру проекта
+```
+project/
+├── css/
+├── js/
+├── img/
+│   └── ico/
+├── fonts/
+└── pages/
+```
+Одной командой
+```shell
+mkdir -p project/{css,js,img/ico,fonts,pages}
 ```
  
 ### Пасхалки
