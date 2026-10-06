@@ -30,13 +30,15 @@ echo "Привет, $name! Добро пожаловать в bash-скрипт�
 #!/bin/bash - шибэнг, для ОС
 
 ```bash
-# fineFile.sh
 #!/bin/bash
-echo "Ввелите имя искомого файла:"
-read filename
-if [-f "$filename"]; then
-    echo "Файл: $filename найден!"
+
+read -p "Введите имя файла: " filename
+
+if [ -f "$filename" ]; then
+    echo "Файл '$filename' существует."
 else
-    echo "Файл: $filename не найден!"
+    echo "Файл '$filename' не найден (или это не обычный файл)."
 fi
 ```
+
+***
