@@ -2,8 +2,7 @@
 
 ## Навигация
 
-- [Основы редактирования текста](/text.md)
+- [Основы редактирования текста](/Text.md)
 - [Markdown](/Markdown.md)
 - [Mermaid](/Mermaid.md)
 - [bashcli](/Bashcli.md)
--
