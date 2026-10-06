@@ -28,3 +28,15 @@ read name
 echo "Привет, $name! Добро пожаловать в bash-скриптинг"
 ```
 #!/bin/bash - шибэнг, для ОС
+
+```bash
+# fineFile.sh
+#!/bin/bash
+echo "Ввелите имя искомого файла:"
+read filename
+if [-f "$filename"]; then
+    echo "Файл: $filename найден!"
+else
+    echo "Файл: $filename не найден!"
+fi
+```
