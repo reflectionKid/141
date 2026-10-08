@@ -2,8 +2,6 @@
 
 git.md
 
-![Linus](/content/img/linus-torvalds-about-nvidia-june-2012.jpg)
-
 ### Зачем нужен Git?
 
 #### Почему не флешка?
@@ -359,13 +357,11 @@ git merge anybranch
 
 ### Мэмы по Git
 
-![Какой-то текст](/content/Git/img/1.jpg)
+![Какой-то текст](/img/45.png)
 
-![Какой-то текст](/content/Git/img/2.jpg)
+![Какой-то текст](/img/46.png)
 
-![Какой-то текст](/content/Git/img/3.jpg)
-
-![Какой-то текст](/content/Git/img/4.jpg)
+![Какой-то текст](/img/47.png)
 
 > Если вы обнаружили ошибку в этом тексте - сообщите пожалуйста автору!
 
