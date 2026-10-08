@@ -1,15 +1,15 @@
 ## Основы Bash CLI
- 
+
 файл `bashcli.md`
- 
+
 **Bash** - терминал, командная строка, консоль. Ещё **Bash**- это скриптовый ЯП
- 
+
 **CLI** - Command Line Interface
- 
+
 Терминал - для ввода текстовых команд
- 
+
 ### Терминал
- 
+
 Сдвинуть вверх лог выполненных ранее команд
 ```shell
 Ctrl+L
@@ -27,7 +27,7 @@ reset
 du /
 ```
 Прервать по `Ctrl+C`
- 
+
 Получить историю всех ранее введённых команд
 ```shell
 history
@@ -37,23 +37,23 @@ history
 !53
 ```
 где 53 - это порядковый № команды из списка `history`
- 
+
 Выполнить последнюю команду из `history`
 ```shell
 !!
 ```
 Перелистывание ранее введённых команд
 `Стрелки вверх/вниз ^v`
- 
+
 Дописывание команд и имён файлов/каталогов при помощи `Tab`
- 
+
 Выйти из текущего терминала
 ```shell
 exit
 ```
- 
+
 ### Linux (переходим в Ubuntu WSL)
- 
+
 Получить информацию по дистрибутиву
 ```shell
 lsb_release -a
@@ -71,7 +71,7 @@ inxi -F
 htop
 ```
 `Q` - выйти из `htop`
- 
+
 Получить t и CPU/GPU и скорость вращения Fan
 ```shell
 sensors
@@ -92,9 +92,9 @@ id
 ```shell
 groups
 ```
- 
+
 #### Софт
- 
+
 Показать календарь
 ```shell
 cal
@@ -111,9 +111,9 @@ ascii -d
 ```shell
 ascii -b
 ```
- 
+
 ### Сеть
- 
+
 Получить имя компьютера
 ```shell
 hostname
@@ -143,7 +143,7 @@ ping 8.8.8.8
 ping ya.ru
 ```
 Чтобы выйти из бесконечного пинга, выполните `Ctrl+C`
- 
+
 Выполнить пинг указанное количество раз
 ```shell
 ping -c 4 ya.ru
@@ -160,9 +160,9 @@ netstat -an
 ```shell
 route
 ```
- 
+
 ### Управление компьютером CLI
- 
+
 Перезагрузка
 ```shell
 reboot
@@ -187,9 +187,9 @@ sudo shutdown -p now
 ```shell
 sudo systemctl poweroff
 ```
- 
+
 ### Файловые операции
- 
+
 Получить абсолютный путь к текущей директории
 ```shell
 pwd
@@ -223,7 +223,7 @@ cat имя_файла
 nano имя_файла
 ```
 Сохранить `Ctrl+S`, выйти `Ctrl+X`
- 
+
 Переименовать файл
 ```shell
 mv old_name.txt new_name.txt
@@ -268,9 +268,9 @@ cd -
 ```shell
 rm -rf newDir
 ```
- 
+
 ### Работа с разными языками программирования (выполнять в Ubuntu WSL)
- 
+
 Создать файл скрипта
 ```shell
 nano main.py
@@ -315,9 +315,9 @@ ldd main.bin
 ```shell
 time python3 main.py
 ```
- 
+
 ### Конвейерная обработка файлов и каталогов
- 
+
 Создать сразу несколько пустых файлов
 ```shell
 touch {1..3}.txt
@@ -348,15 +348,15 @@ project/
 ```shell
 mkdir -p project/{css,js,img/ico,fonts,pages}
 ```
- 
+
 ### Пасхалки
- 
+
 Матрица
 ```shell
 cmatrix
 ```
 Выйти из матрицы по `Q`
- 
+
 Поезд
 ```shell
 sl
@@ -394,7 +394,7 @@ curl ascii.live/can-you-hear-me
 snap install asciiquarium && asciiquarium
 ```
 Выйти из аквариума по '**Q**'
- 
+
 Хакерский терминал
 ```shell
 docker run --rm -it bcbcarl/hollywood
