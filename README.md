@@ -2,6 +2,7 @@
 
 ## Навигация
 
+- [Репозиторий преродаватель](https://gitflic.ru/project/rurewa/mfua)
 - [Основы редактирования текста](/Text.md)
 - [Markdown](/Markdown.md)
 - [Mermaid](/Mermaid.md)
